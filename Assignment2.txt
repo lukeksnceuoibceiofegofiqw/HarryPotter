@@ -1,0 +1,98 @@
+INFOB3IT 2024
+Assignment 2 
+Group #:
+Student name:
+Luke Bleijenbergh
+Chion Craane
+Type: Group work
+Deadline:  Thursday 11th April 2024 – 17.00
+Submit: Blackboard
+Evaluation: Graded
+
+Introduction
+	Use this section to introduce your project. Describe what makes it special, 
+	what are its features. You can briefly report the results of the study in a few sentences 
+	(e.g.  the gesture set, the integration of the gestures, and the results of the usability testing).
+	(Up to two paragraphs)
+
+What makes our project special is the pronounces wizard theming. The goal of our project is not just to make the most usable system, but also to give the user a magical experience. 
+
+System details
+	This section should provide some details of your system, in order to help us decide to 
+	what extent you meet the objectives. It should (briefly) document the choices that you made. 
+	These should include choices regarding libraries, watering conditions, MQTT features 
+	(the topics you used, the payload structure and values, the frequency of updates, the QoS settings, 
+	retained messages, etc.) and any other choices you deem relevant. Also, if you are using QoS levels that 
+	are different from the ones you intended to use because of library limitations, that should go into this document. 
+	And don’t forget to mention any extras you implemented!
+	This section should also include a clear photo of your hardware setup and 
+	some screenshots of your clients (e.g., Node-RED flow, dashboard, smartphone app, OLED screens, …). 
+	Full schematics or a state diagram are not required (but feel free to include them if you made them anyway).
+	This is also the place to optionally reflect a bit on the things that you might 
+	not have implemented but would have improved your system, as mentioned in the requirements 
+	(such as Wi-Fi configuration, security features, OTA). 
+	(Up to 2 pages including tables and figures)
+
+
+Gesture Elicitation
+	This section should report your gesture elicitation study, analysis, and results. 
+	Describe the thinking process behind your study design (e.g., recruitment process, 
+	scenarios, observation) and the methodology (e.g., classification criteria and consensus) 
+	used to analyze the results (e.g., agreement scores). The section should conclude with 
+	the gesture set used in the gesture implementation section.
+	(Up to 2 pages including tables and figures)
+
+Because our goal is to generate a magical experience on top of creating a 
+gesture controlled plant watering system our gestures will become more 
+complex and less intuitive. But our method of determining what good 
+gestures are can stay mostly similar. Our gestures are made with a magical 
+wand that reads the rotation and acceleration. Our testers will be asked to come 
+up with two gestures for the two manual actions. One challenge is that asking 
+users to come up with complex gestures the chance of two users responding 
+with the same gesture are slim. Therefor we will look at patterns in 
+gestures instead. We will ask our testers to come up with gestures consisting of 
+three to five patterns. Examples of patterns are. Moving the wand up and down, 
+making a circular motion or thrusting the wand strait up into the air. This means 
+that one users gesture can end up in multiple gesture groups. This leads to a higher 
+agreement score, we think that this is a necessity to end on a final gesture. 
+
+
+Gesture Implementation 
+	Describe how did you implement the gesture set in the system including gesture recognition techniques and constraints (e.g., glove design).  
+	(Up to 2 pages including tables and figures)
+
+We made a wand that contains the stickuino and the gyroscope. 
+For the connection with the computer it is necessary to have a wire running from the stickuino to a laptop. 
+Because it is important for the user to have a good range of motion with the wand the wire needs to be 
+long and light. Users have said that they don’t want the want to be attached in any way so we couldn’t 
+make the wire run through a sweatband in the arm. 
+Picking up the wand is not used as a trigger to start looking for a 
+gesture because while the wand is picked up the system should function as normal and no 
+gesture should be detected until a full gesture is completed. In theory the users should be 
+able to carry the wand for an entire day without a gesture being detected. This is more applicable 
+in a possible future iteration with a wireless wand. 
+
+Usability testing 
+	Report the study setup of the usability testing providing a) methodology, b) material and Apparatus, b) analysis. Report in a few sentences the main findings.
+	(Up to 2 pages including tables and figures)
+
+For usability testing we asked participants in the sticky living room to test our system. 
+We chose this method of finding users because it was the most accessible way to find many testers. 
+A possible danger of this method is that these testers are more acquainted to technology than the 
+average person. Because of this we had to pay extra attention to confusions that arose while testing. 
+
+
+Conclusion
+	Briefly summarize your system, the study, and the results. 
+	(Up to 1 paragraph). 
+
+During our study we found that users are very accepting of more complicated gestures to 
+support the theme of magic. But are less accepting of misdetection, because this breaks the immersion.
+
+
+Appendix
+You can provide additional material in this section.
+ 
+
+
+
